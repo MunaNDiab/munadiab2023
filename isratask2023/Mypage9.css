@@ -1,0 +1,103 @@
+:root {
+    --header-color: #666;
+    --footer-color: #777;
+    --nav-color: #ccc;
+    --article-color: #f1f1f1;
+}
+
+img {
+    float: left;
+}
+
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: var(--header-color);
+    padding: 5px;
+    text-align: center;
+    font-size: px;
+    color: white;
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 150px;
+
+}
+
+a:hover,
+a:active {
+    background-color: green;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 560px;
+    /* only for demonstration, should be removed */
+    background: var(--nav-color);
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: var(--article-color);
+    height: 560px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: var(--footer-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+</head>
