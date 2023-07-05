@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="mypage11.css">
+</head>
+
+<body>
+    <h1>My Calculator</h1>
+    <div class="div1">
+        <table>
+            <tr>
+                <th colspan="3"> <input class="myDiv" type="text" id="screen" disabled></th>
+                <th> <input class="clear" type="button" value="C" onclick="clearScreen()"><br></th>
+            </tr>
+            <tr>
+                <td><input class="but" type="button" value="1" onclick="addToScreen('1')"></td>
+                <td><input class="but" type="button" value="2" onclick="addToScreen('2')"></td>
+                <td><input class="but" type="button" value="3" onclick="addToScreen('3')"></td>
+                <td> <input class="but" type="button" value="/" onclick="addToScreen('/')"></td>
+            </tr><br>
+            <tr>
+                <td> <input class="but" type="button" value="4" onclick="addToScreen('4')"></td>
+                <td> <input class="but" type="button" value="5" onclick="addToScreen('5')"></td>
+                <td> <input class="but" type="button" value="6" onclick="addToScreen('6')"></td>
+                <td> <input class="but" type="button" value="-" onclick="addToScreen('-')" </td>
+            </tr><br>
+            <tr>
+                <td><input class="but" type="button" value="7" onclick="addToScreen('7')"></td>
+                <td> <input class="but" type="button" value="8" onclick="addToScreen('8')"></td>
+                <td><input class="but" type="button" value="9" onclick="addToScreen('9')"></td>
+                <td><input class="but" type="button" value="+" onclick="addToScreen('+')"></td>
+            </tr><br>
+            <tr>
+                <td><input class="but" type="button" value="." onclick="addToScreen('.')"></td>
+                <td> <input class="but" type="button" value="0" onclick="addToScreen('0')"></td>
+                <td> <input class="equal" type="button" value="=" onclick="calculate()"></td>
+                <td> <input class="but" type="button" value="*" onclick="addToScreen('*')"></td>
+            </tr><br>
+
+    </div>
+
+    <script>
+        function addToScreen(value) {
+            document.getElementById('screen').value += value;
+        }
+
+        function clearScreen() {
+            document.getElementById('screen').value = '';
+        }
+
+        function calculate() {
+            var expression = document.getElementById('screen').value;
+            var result = eval(expression);
+            document.getElementById('screen').value = result;
+        }
+    </script>
+
+
+</body>
+
+</html>
