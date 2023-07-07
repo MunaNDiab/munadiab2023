@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body style="margin: 30px">
+
+
+    <p>Calculate multiplication and division of two numbers</p>
+    <table>
+        <tr>
+            <td>First Number:</td>
+            <td style="width:60%"><input type="text" id="firstNumber"> </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Second Namber:</td>
+            <td><input type="text" id="secondNumber"></td>
+        </tr>
+        <tr>
+            <td style="heigh:60%"></td>
+            <td>
+                <input type="button" onClick="multiply()" Value="Multiply" />
+                <button type="button" onclick="divide()" Value="Divide">Divide</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>The Ruslt is:</td>
+            <td> <span id="result"></span></td>
+        </tr>
+    </table>
+
+    <script>
+        function multiply() {
+            const firstInput = document.getElementById('firstNumber').value;
+            const secandInput = document.getElementById('secondNumber').value;
+
+            if (firstInput === '' || secandInput === '') {
+                alert(' first number or second number is empty.');
+                return;
+            }
+
+            firstn = document.getElementById(
+                "firstNumber").value;
+            secondn = document.getElementById(
+                "secondNumber").value;
+            document.getElementById(
+                "result").innerHTML = firstn * secondn;
+        }
+
+        function divide() {
+            const firstInput = document.getElementById('firstNumber').value;
+            const secandInput = document.getElementById('secondNumber').value;
+
+            if (firstInput === '' || secandInput === '') {
+                alert(' first number or second number is empty.');
+                return;
+            }
+
+            firstn = document.getElementById(
+                "firstNumber").value;
+            secondn = document.getElementById(
+                "secondNumber").value;
+            document.getElementById(
+                "result").innerHTML = firstn / secondn;
+        }
+
+
+
+    </script>
+
+    <p>Convert temperatures to and from Celsius, Fahrenheit. </p>
+
+    <table>
+        <tr>
+            <td>Celsius:</td>
+            <td style="width:60%"> <input type="text" id="celsius">
+            </td>
+        </tr>
+        <tr>
+            <td>Fahrenheit:</td>
+            <td> <input type="text" id="fahrenheit"></td>
+        </tr>
+        <tr>
+            <td style="heigh:60%"></td>
+            <td>
+                <button type="button" value="convert" onclick="convertFtoC()">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>The Ruslt is:</td>
+            <td> <span id="resultt"></span></td>
+        </tr>
+    </table>
+    <script>
+        function convertFtoC() {
+            const fahrenheitInput = document.getElementById('fahrenheit').value;
+            const celsiusInput = document.getElementById('celsius').value;
+
+
+            if (fahrenheitInput === '' || celsiusInput === '') {
+                alert('Celsius and Fahrenheit are empty.');
+                return;
+            }
+
+            const celsiusOutput = (fahrenheitInput - 32) / 1.8;
+            const fahrenheitOutput = (celsiusInput * 1.8) + 32;
+
+            document.getElementById('resultt').innerHTML =
+                `${fahrenheitOutput}°F = ${celsiusOutput.toFixed(2)}°C`,
+                `${celsiusInput}°C = ${fahrenheitOutput.toFixed(2)}°F`;
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
