@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>console Demo</title>
+</head>
+
+<body>
+    <h1>Console Demo!</h1>
+
+    <button onclick="console.info('My Info');">log info </button>
+    <button onclick="console.warn('My Warning');"> log warning </button>
+    <button onclick=" console.error('My Error');"> log error</button>
+    <button onclick="console.table(mytable);""> log table </button>
+    
+    <script>
+        const h1 = document.querySelector('h1');
+        //console.table([
+        const mytable = [
+            {
+                Name: 'Zeyad Abed Aljalil',
+                Age: '36',
+                Address: 'Nablus, Beit Dajan'
+            },
+            {
+                Name: 'Ahmad Hanani',
+                Age: '35',
+                Address: 'Nablus, Beit Fureeq'
+            },
+            {
+                Name: 'Ahmad Eran',
+                Age: '39',
+                Address: 'Nablus'
+            }
+        ];
+    </script>
+  </body>
+</html>
