@@ -1,0 +1,14 @@
+Task 10 : 
+No Comment, Perfect.
+
+Task 11 :
+No Comment, Perfect. 
+
+Task 12 :
+Dont forget handling dividing by zero.
+I guess converting part wasn't clear, 
+as you should check if both or neither values exists, if so, return alert and error
+if not, find which one you have and convert it to the other,
+dont worry,
+the important thing you get the concepet of converting
+Good Job
