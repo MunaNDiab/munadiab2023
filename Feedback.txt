@@ -12,3 +12,40 @@ if not, find which one you have and convert it to the other,
 dont worry,
 the important thing you get the concepet of converting
 Good Job
+
+
+Task 13 :
+When the id is unavailable, the user isn't "not found", as there is no user to look for.
+"user not found" when we have a valid id, but there is no data,
+you can fix that by adding try catch block,
+as if we insert id 12, id = data[i-1]['id'] triggers an error
+we catch this error and output user not found
+goes for both parts.
+Good Job.
+
+Task 14 :
+No Comment, Perfect.
+
+Task 15 :
+You Should've used bootstrap 5...
+Outstanding, Good Job.
+
+Task 16 :
+dont worry just a place holder
+
+Task 17 :
+have the table in the div with the text so all the page content handeled by render function 
+Excelent.
+
+Task 18 :
+it looks like the main file that controls everything (App.js)
+is missing, please add it and notify me
+if the submitted work in "calculator" file is complete, please notify me.
+
+
+
+
+
+
+
+
