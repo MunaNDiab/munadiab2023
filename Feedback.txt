@@ -38,9 +38,12 @@ have the table in the div with the text so all the page content handeled by rend
 Excelent.
 
 Task 18 :
-it looks like the main file that controls everything (App.js)
-is missing, please add it and notify me
-if the submitted work in "calculator" file is complete, please notify me.
+Good Job with the design,
+However, this is not react,
+this is normal html disguised as react.
+the button.js supposed to be dynamically input
+and we button from app.js and give it all the props needed
+this is not react.
 
 
 
