@@ -14,7 +14,7 @@ function getAge() {
     const birthDate = new Date(1985, 1, 16);
     const today = new Date();
     const ageInMilliseconds = today - birthDate;
-    const ageInYears = Math.floor(ageInMilliseconds / 31557600000);
+    const ageInYears = Math.floor(ageInMilliseconds / 31557600000); // Calculate age in years
     console.log(ageInYears);
     return ageInYears;
 }
