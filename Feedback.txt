@@ -45,7 +45,30 @@ the button.js supposed to be dynamically input
 and we button from app.js and give it all the props needed
 this is not react.
 
+Task 19 :
+No Comment, Perfect.
 
+Task 20 :
+No Comment, Perfect.
+
+Task 21 :
+No Comment, Perfect.
+
+Task 22 :
+No Comment, Perfect.
+
+Task 23 :
+No Comment, Perfect.
+
+Task 24 :
+Some notes about the return function, but understandble
+Good Job.
+
+Task 25 :
+No Comment, Perfect.
+
+I Have Finished Giving Feedback for your tasks except task 16
+your overall performance was Great.
 
 
 
