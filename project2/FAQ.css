@@ -1,0 +1,19 @@
+.container {
+    position: fixed;
+}
+
+.imgaa {
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    width: 20%;
+}
+
+.accordion {
+    padding: 5cm;
+
+}
+
+.accordion-button:hover {
+    background-color: orangered;
+}
